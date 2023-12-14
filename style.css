@@ -1,6 +1,12 @@
 *{
     font-family: Black Ops One, Arial, Helvetica, sans-serif;
 }
+.statement-woo-won{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-left: 7% ;
+}
 
 body{
     background-image: url(images/background.png);
@@ -29,12 +35,14 @@ body{
 }
 
 .player input{
+    padding-left: 30px;
     height: 40px;
     border: none;
     background-color: #D9D9D9;
     opacity: 50%;
     width: 30%;
     border-radius: 20px;
+    font-size: 20px;
 }
 .player input::placeholder{
     text-align: center;
@@ -61,7 +69,7 @@ body{
     padding-left: 50px;
     padding-right: 50px;
     border: none;
-    background-color: #D9D9D9;
+    background-color: #8a4242;
     opacity: 50%;
     /* width: 30%; */
     border-radius: 20px;
@@ -76,5 +84,35 @@ body{
     margin-left: 90px;
     font-size: 60px;
     color: white;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
+}
+.home{
+    background-color: ;
+}
+.score-Update{
+    display:flex;
+    justify-content: space-between;
+    padding-left: 45%;
+    color: white;
+    padding-right: 40%;
+    
+}
+
+.home, .instru{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: white;
+    font-size: 2rem;
+    background-color: #bdbdbd;
+    opacity: 60%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.inst p{
+    margin-top: 3%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
 }

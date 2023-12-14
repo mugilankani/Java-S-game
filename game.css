@@ -37,6 +37,10 @@ body{
     /* align-self: center; */
     left: 45%;
 }
+.score-Update{
+    display:flex;
+    justify-content: space-between;
+}
 .players{
     width: 70%;
     position: absolute;
@@ -54,4 +58,36 @@ body{
     right: 20px;
     font-size: 50px;
     top: 20px;
+@media screen and (max-height: 430px) and (orientation: landscape) {
+
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .green-color, .broun-color {
+    width: 100%;
+  }
+
+  .game-decider {
+    bottom: 24px;
+    left: 22.5%;
+  }
+
+  .players {
+    width: 35%;
+    bottom: 20px;
+    left: 102.5px;
+  }
+
+  .tittle {
+    margin-top: 25px;
+  }
+
+  .timer {
+    right: 10px;
+    font-size: 25px;
+    top: 10px;
+  }
+}
 }

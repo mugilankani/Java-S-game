@@ -1,0 +1,64 @@
+@media screen and (max-height: 430px) and (orientation: landscape) {
+
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .logo {
+    font-size: 200%;
+    margin-left: 50px;
+  }
+
+  .logo2 {
+    top: -5% ;
+    margin-bottom: 50px;
+  }
+
+  .player {
+    display: flex;
+    display: inline-block;
+  }
+
+  .player input {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .player h1 {
+    display: inline-block;
+    margin-left: 5%;
+  }
+
+  .player1 {
+    margin-bottom: 50px;
+  }
+
+
+
+  .button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .player-won, .statement-woo-loss, .score-won {
+    font-size: 30px;
+    margin-left: 45px;
+    margin-bottom: 40px;
+  }
+
+  .score-Update {
+    padding-left: 22.5%;
+    padding-right: 20%;
+  }
+
+  .home, .instru {
+    right: 2.5%;
+    top: 2.5%;
+    font-size: 1rem;
+  }
+
+  .inst p {
+    font-size: 1rem;
+  }
+}

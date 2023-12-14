@@ -1,0 +1,53 @@
+@media screen and (max-height: 430px) and (orientation: landscape) {
+
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .green-color, .broun-color {
+    width: 100%;
+  }
+
+  .game-decider {
+    bottom: 24px;
+    left: 50%;
+    width: 5%;
+  }
+  .game-decider img{
+    width:5rem;
+  }
+
+  .players {
+    width: 60%;
+    bottom: 45px;
+    left: 20%;
+  }
+
+  .tittle {
+    margin-top: -25px;
+  }
+
+  .timer {
+    right: 10px;
+    font-size: 25px;
+    top: 10px;
+  }
+  .left{
+    /* background-color: rgba(132, 1, 255, 0.342); */
+    height: 100vh;
+    width: 50vw;
+    top: 0;
+    bottom: 0;
+    position:absolute;
+  }
+  .right{
+    /* background-color: rgba(241, 113, 7, 0.342); */
+    height: 100vh;
+    width: 50vw;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    position:absolute;
+  }
+}

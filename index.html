@@ -6,12 +6,19 @@
     <title>Tug Of War</title>
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="mobile.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
+        <div>
+            <button class="instru" onclick="
+                location.href ='instructions.html'
+                ">INSTRUCTIONS</button>
+        </div>
 
 
     <div class="logos">
@@ -29,7 +36,7 @@
 
         <h1>Player 1</h1>
 
-        <input class="name-input" type="text" placeholder="Enter Your Name" required>
+        <input class="name-input input1" type="text" placeholder="Enter Your Name" required>
         
     </div>
 
@@ -37,14 +44,13 @@
 
         <h1>Player 2</h1>
 
-        <input type="text" placeholder="Enter Your Name" required>
+        <input class="input2" type="text" placeholder="Enter Your Name" required>
         
     </div>
 
     <div class="start-button">
-        <button class="button" onclick="
-            location.href='game.html'
-            ">
+        <button class="button" 
+            >
 
             click To Start 
 
@@ -56,5 +62,6 @@
 
 
     <script src="frontpage.js"></script>
+
 </body>
 </html>
