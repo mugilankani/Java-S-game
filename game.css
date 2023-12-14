@@ -3,7 +3,7 @@
     color: black;
 }
 body{
-    height: 98vh;
+    height: 90vh;
     width: 90vw;
     /* background-image: url(images/bg.png) no-repeat center center fixed; */
     background-image: url(images/enlarge_image_5.png);
@@ -37,11 +37,11 @@ body{
     /* align-self: center; */
     left: 45%;
 }
-.rope img{
+.players{
     width: 70%;
     position: absolute;
     bottom: 40px;
-    left: 12.5%;
+    left: 205px;
 }
 .tittle{
     display: flex;
