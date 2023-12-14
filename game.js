@@ -34,11 +34,17 @@ document.addEventListener('keydown', function(event) {
         moveInterval = setInterval(function() {
             left += 10;
             players.style.left = left + 'px'; // move left
+            leftCount += 10
+            rightCount -=10
+            console.log("left count : "+leftCount)
         }, 100);
     } else if (key === 'a') {
         moveInterval = setInterval(function() {
             left -= 10;
             players.style.left = left + 'px'; // move right
+            rightCount += 10
+            leftCount -=10
+           console.log("right click"+ rightCount)
         }, 100);
     }
 });
