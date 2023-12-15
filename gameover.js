@@ -1,7 +1,7 @@
 const player1Score = localStorage.getItem('player1Score');
 const player2Score = localStorage.getItem('player2Score'); 
 
-let winnerName= localStorage.getItem('Winners')
+let winnerName= localStorage.getItem('Winners') ||localStorage.getItem('winner')
 
 // let statement = document.querySelector(".")
 
