@@ -44,14 +44,14 @@ document.addEventListener('keydown', function(event) {
     const style = window.getComputedStyle(players);
     let left = parseInt(style.left.replace('px', ''), 10);
 
-    if (key === 'l'||key === 'L') {
+    if (key === 'l' || key === 'L') {
         left += 15;
         players.style.left = left + 'px'; // move left
         player2Count += 10;
         player1Count -= 10;
         clickSound.currentTime = 0;
       clickSound.play();
-    } else if (key === 'a'||key === 'A') {
+    } else if (key === 'a' || key === 'A') {
         left -= 15;
         players.style.left = left + 'px'; // move right
         player1Count += 10;
