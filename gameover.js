@@ -1,7 +1,7 @@
 const player1Score = localStorage.getItem('player1Score');
 const player2Score = localStorage.getItem('player2Score'); 
 
-let winnerName= localStorage.getItem('winner')
+let winnerName= localStorage.getItem('Winners')
 
 // let statement = document.querySelector(".")
 
@@ -34,4 +34,6 @@ document.querySelector('.gameoverButton').addEventListener('click',()=>{
   location.href ="game.html"
 })
 
-console.log(localStorage.getItem('winner'))
+let winner =localStorage.getItem('Winners')
+
+console.log(winner)

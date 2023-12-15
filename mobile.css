@@ -16,25 +16,33 @@
   }
 
   .player {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10%;
     display: inline-block;
   }
 
   .player input {
     width: 50%;
+    font-size: 1rem;
     display: inline-block;
   }
 
   .player h1 {
     display: inline-block;
     margin-left: 5%;
+    font-size:1rem;
   }
 
   .player1 {
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
   }
 
-
+.statement-woo-loss{
+  font-size: 1rem;
+  margin: 1%;
+  
+}
 
   .button {
     padding-left: 2rem;
@@ -42,20 +50,24 @@
   }
 
   .player-won, .statement-woo-loss, .score-won {
-    font-size: 30px;
-    margin-left: 45px;
-    margin-bottom: 40px;
+    font-size: 1rem;
+    /* margin-left: 45px; */
+    /* margin-bottom: 1%; */
   }
 
   .score-Update {
-    padding-left: 22.5%;
-    padding-right: 20%;
+    /* padding-left: 22.5%;
+    padding-right: 20%; */
   }
 
   .home, .instru {
     right: 2.5%;
     top: 2.5%;
     font-size: 1rem;
+  }
+  .player-won{
+    font-size: 2rem;
+    margin: 0;
   }
 
   .inst p {

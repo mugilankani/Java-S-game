@@ -13,7 +13,7 @@ player2Name.innerHTML = localStorage.getItem('player2Name')
 
 let player1Count = 0;
 let player2Count = 0;
-let timer = 10;
+let timer = 20;
 
 timerElement.innerHTML = timer;
 
@@ -88,7 +88,8 @@ rightDiv.addEventListener('click',()=>{
     rightclick()
 })
 let winner=""
-localStorage.setItem('winner',winner)
+
+// localStorage.setItem('winner',lastWinner)
 const style = window.getComputedStyle(players);
 let left = parseInt(style.left.replace('px', ''), 10);
     
@@ -115,16 +116,9 @@ let left = parseInt(style.left.replace('px', ''), 10);
         player2Count = 0;
         localStorage.setItem('player2Score', player2Points.innerHTML); 
     }
+    winnderDecider()
     
-    if(parseInt(player1Points.innerHTML)>parseInt(player2Points.innerHTML)){
-      winner = localStorage.getItem('player1Name')
-      
-    }
-    else if(parseInt(player2Points.innerHTML)>parseInt(player1Points.innerHTML)){
-      winner = localStorage.getItem('player2Name') 
-    }else{
-      winner =""
-    }
+    
 }
 function leftClick() {
     left = parseInt(style.left.replace('px', ''), 10)
@@ -146,16 +140,26 @@ function leftClick() {
         player2Count = 0;
         localStorage.setItem('player1Score', player1Points.innerHTML); 
     }
+    winnderDecider()
      
-    if(parseInt(player1Points.innerHTML)>parseInt(player2Points.innerHTML)){
-      winner = localStorage.getItem('player1Name')
-    }
-    else if(parseInt(player2Points.innerHTML)>parseInt(player1Points.innerHTML)){
-      winner = localStorage.getItem('player2Name') 
-    }else{
-      winner =""
-    }
+   
     
   //  console.log(winner)
 
+}
+function winnderDecider(){
+  if(parseInt(player1Points.innerHTML)>parseInt(player2Points.innerHTML)){
+    winner = localStorage.getItem('player1Name')
+    
+  }
+  else if(parseInt(player2Points.innerHTML)>parseInt(player1Points.innerHTML)){
+    winner = localStorage.getItem('player2Name') 
+  }else{
+    winner =""
+  }
+  console.log(winner)
+
+  localStorage.setItem('Winners', winner)
+
+  return winner;
 }
