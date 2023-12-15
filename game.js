@@ -22,7 +22,7 @@ player2Name.innerHTML = localStorage.getItem('player2Name')
 
 let player1Count = 0;
 let player2Count = 0;
-let timer = 200;
+let timer = 30;
 const clickSound = document.getElementById('clickSound');
 
 
@@ -44,14 +44,14 @@ document.addEventListener('keydown', function(event) {
     const style = window.getComputedStyle(players);
     let left = parseInt(style.left.replace('px', ''), 10);
 
-    if (key === 'l'||key === 'L) {
+    if (key === 'l'||key === 'L') {
         left += 15;
         players.style.left = left + 'px'; // move left
         player2Count += 10;
         player1Count -= 10;
         clickSound.currentTime = 0;
       clickSound.play();
-    } else if (key === 'a'||key === 'a') {
+    } else if (key === 'a'||key === 'A') {
         left -= 15;
         players.style.left = left + 'px'; // move right
         player1Count += 10;
