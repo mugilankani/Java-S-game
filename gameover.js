@@ -11,6 +11,8 @@ document.querySelector('.player2points').innerText = player2Score || 0;
 
 document.querySelector(".player-won").innerText = winnerName;
 
+const gameOverSound = document.getElementById('gameOverSound');
+gameOverSound.play();
 // console.log(player1Score)
 
 
@@ -31,7 +33,10 @@ document.querySelector('.statement-woo-won').innerText = winnerMessage;
 document.querySelector('.gameoverButton').addEventListener('click',()=>{
   localStorage.removeItem('player2Score')
   localStorage.removeItem('player1Score')
+  localStorage.removeItem('Winners')
+  
   location.href ="game.html"
+
 })
 
 let winner =localStorage.getItem('Winners')

@@ -20,6 +20,7 @@
     grid-template-columns: 1fr 1fr;
     padding-left: 10%;
     display: inline-block;
+    align-items: center;
   }
 
   .player input {
@@ -41,7 +42,7 @@
 .statement-woo-loss{
   font-size: 1rem;
   margin: 1%;
-  
+
 }
 
   .button {

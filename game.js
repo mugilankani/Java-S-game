@@ -6,7 +6,8 @@ const player2Name = document.querySelector(".player22")
 const timerElement = document.querySelector(".timer")
 player1Points.innerHTML = parseInt(0)
 player2Points.innerHTML = parseInt(0)
- 
+// const gameOverSound = document.getElementById('gameOverSound');
+// gameOverSound.play();
 
 player1Name.innerHTML = localStorage.getItem('player1Name')
 player2Name.innerHTML = localStorage.getItem('player2Name')
@@ -14,6 +15,9 @@ player2Name.innerHTML = localStorage.getItem('player2Name')
 let player1Count = 0;
 let player2Count = 0;
 let timer = 20;
+const clickSound = document.getElementById('clickSound');
+
+
 
 timerElement.innerHTML = timer;
 
@@ -37,11 +41,15 @@ document.addEventListener('keydown', function(event) {
         players.style.left = left + 'px'; // move left
         player2Count += 10;
         player1Count -= 10;
+        clickSound.currentTime = 0;
+      clickSound.play();
     } else if (key === 'a') {
         left -= 15;
         players.style.left = left + 'px'; // move right
         player1Count += 10;
         player2Count -= 10;
+        clickSound.currentTime = 0;
+      clickSound.play();
     }
 
     if(player1Count>=50){
@@ -79,12 +87,14 @@ const rightDiv = document.querySelector(".right")
 
 
 leftDiv.addEventListener('click',()=>{
-    console.log(1)
+  clickSound.currentTime = 0;
+  clickSound.play();
     leftClick()
 })
 
 rightDiv.addEventListener('click',()=>{
-    console.log(1)
+  clickSound.currentTime = 0;
+  clickSound.play();
     rightclick()
 })
 let winner=""
