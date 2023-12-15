@@ -1,0 +1,57 @@
+body{
+  height: 95vh;
+  width: 95vw;
+  background-image: url(images/feed-fox-gui-match-3-window-template_284645-919.avif);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top;  
+}
+.parent{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+.parent div img{
+  width: 28vw;
+  height: 33vh;
+  border: 1rem solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  
+}
+.parent div img:hover{
+  width: 30vw;
+  height: 35vh;
+  border: 1rem solid white;
+  cursor: pointer;
+  
+  
+}
+.parent div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choose{
+  text-align: center;
+  color:black;
+}
+.parent div h3{
+  font-size: 2rem;
+  margin: 2%;
+  text-align: center;
+  color: black;
+  margin-bottom: 1rem;
+}
+.play button{
+  padding: 1rem 2rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 49%;
+  position: relative;
+  bottom: 15px  ;
+  font-size: 1rem;
+}

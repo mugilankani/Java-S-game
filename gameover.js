@@ -1,10 +1,19 @@
+const selectedTheme = localStorage.getItem('selectedTheme');
+
+
+if (selectedTheme) {
+    document.body.style.backgroundImage = `url(${selectedTheme})`;
+}
+
 const player1Score = localStorage.getItem('player1Score');
 const player2Score = localStorage.getItem('player2Score'); 
 
 let winnerName= localStorage.getItem('Winners') ||localStorage.getItem('winner')
 
 // let statement = document.querySelector(".")
-
+document.querySelector(".returntohome").addEventListener('click',()=>{
+    location.href = "index.html"
+})
 
 document.querySelector('.player1points').innerText = player1Score || 0;
 document.querySelector('.player2points').innerText = player2Score || 0; 

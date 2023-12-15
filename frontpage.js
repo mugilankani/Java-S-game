@@ -15,7 +15,7 @@ if (!player1 || !player2) {
 }
   localStorage.setItem('player1Name',player1)
   localStorage.setItem('player2Name',player2)
-  location.href ="game.html"
+  location.href ="themes.html"
   
 })
 

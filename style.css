@@ -18,14 +18,14 @@ body{
 .logo{
     text-align: center;
     color:white;
-    font-size: 500%;
+    font-size: 400%;
     margin: 0;
     margin-left: 100px;
     }
 .logo2{
     position:relative;
     top: -10% ;
-    margin-bottom: 100px;
+    margin-bottom: 2rem;
 }
 .player{
     display: flex;
@@ -44,6 +44,7 @@ body{
     width: 30%;
     border-radius: 20px;
     font-size: 20px;
+    text-align: center;
 }
 .player input::placeholder{
     text-align: center;
@@ -52,13 +53,13 @@ body{
     margin-left: 20%;
 }
 .player1{
-    margin-bottom: 100px;
+    margin-bottom: 2rem;
 }
 .start-button{
     display: flex;
     justify-content: space-around;
     margin-top: 10%;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 
     /* padding: 4%; */
 }
@@ -66,14 +67,16 @@ body{
     text-align: center;
 }
 .button{
-    padding: 0.5%;
+    padding: 1rem;
     padding-left: 50px;
     padding-right: 50px;
     border: none;
-    background-color: #8a4242;
-    opacity: 50%;
+    background-color: #fff1f1;
+    /* opacity: 50%; */
     /* width: 30%; */
     border-radius: 20px;
+    color: black;
+    font-size: 1rem;
 }
 .button:hover,.player input{
     background-color: #bdbdbd;
@@ -87,13 +90,11 @@ body{
     color: white;
     margin-bottom: 30px;
 }
-.home{
-    background-color: ;
-}
+
 .score-Update{
     display:flex;
     justify-content: space-between;
-    padding-left: 45%;
+    padding-left: 43%;
     color: white;
     padding-right: 40%;
     
@@ -103,17 +104,41 @@ body{
     position: absolute;
     right: 5%;
     top: 5%;
-    color: white;
+    color: red;
     font-size: 2rem;
     background-color: #bdbdbd;
     opacity: 60%;
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    padding: 1rem;
 }
+
 .inst p{
     margin-top: 3%;
     color: white;
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 4rem;
+}
+.button1{
+    margin-left: 3rem;
+}
+.inst{
+    width: 60%;
+    padding-left: 24%;
+
+    align-items: center;
+}
+.backgroundgame{
+    background-color: #8a4242;
+    width: 30%;
+    display: flex;
+    display: block;
+    /* justify-content: center; */
+    margin-left: 40%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border-radius: 50px;
+
 }

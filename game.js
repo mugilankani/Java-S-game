@@ -1,3 +1,11 @@
+const selectedTheme = localStorage.getItem('selectedTheme');
+
+
+if (selectedTheme) {
+    document.body.style.backgroundImage = `url(${selectedTheme})`;
+}
+
+
 const players = document.querySelector(".players")
 const player1Points = document.querySelector(".player1points")
 const player2Points = document.querySelector(".player2points")
@@ -14,7 +22,7 @@ player2Name.innerHTML = localStorage.getItem('player2Name')
 
 let player1Count = 0;
 let player2Count = 0;
-let timer = 20;
+let timer = 200;
 const clickSound = document.getElementById('clickSound');
 
 

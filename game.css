@@ -2,6 +2,7 @@
     font-family: Black Ops One, Arial, Helvetica, sans-serif;
     color: black;
 }
+
 body{
     height: 90vh;
     width: 90vw;
@@ -12,8 +13,13 @@ body{
     /* background-position: 0 -300px; */
     /* background-repeat: no-repeat; */
     background-position: center;
-
-}
+    /* position: relative; */
+    
+  }
+  /* .parent{
+    border: 2px solid black;
+    /* position: relative; */
+} */
 .green-color{
     background-color: #97A919;
     height: 25px;
@@ -58,6 +64,7 @@ body{
     right: 20px;
     font-size: 50px;
     top: 20px;
+}
 @media screen and (max-height: 430px) and (orientation: landscape) {
 
   body {
@@ -89,5 +96,4 @@ body{
     font-size: 25px;
     top: 10px;
   }
-}
 }
